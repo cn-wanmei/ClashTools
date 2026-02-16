@@ -226,15 +226,15 @@ proxy-groups:
 
 #策略 # 
 
-  - {name: ♻️ 代理模式, type: select , proxies: [🚀 手动选择,  🆓  定向免流, 🔀 自动选择, ➡️ 直连模式, ❌ 阻断连接] , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/SS.png"}
-  - {name: 🚀 手动选择, type: select , include-all-providers: true , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/El.png"} 
-  - {name: 🆓  定向免流, type: select , include-all-providers: true , filter: "(?i)免流" ,icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/free_mianliu.png"}   
+  - {name: ♻️ 代理模式, type: select , proxies: [🚀 手动选择,  🆓  定向免流, 🔀 自动选择, ➡️ 直连模式, ❌ 阻断连接] , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/SS.png"}
+  - {name: 🚀 手动选择, type: select , include-all-providers: true , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/El.png"} 
+  - {name: 🆓  定向免流, type: select , include-all-providers: true , filter: "(?i)免流" ,icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/free_mianliu.png"}   
   #  自动切换节点模式
 #  - {name: ✅ 故障转移, type: fallback,  proxies: [🚀 手动选择,🟥 港澳节点,🟥 台湾节点,🦁 新家节点,🗾 日本节点,🥒 韩国节点]} 
 #  - {name: ✅ 故障转移, type: fallback, include-all-providers: true}     
-#  - {name: 🔀 自动选择, type: url-test , include-all-providers: true , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Auto_Speed.png"} 
-  - {name: 🔀 自动选择, type: url-test , include-all-providers: true , url: http://www.apple.com/library/test/success.html, interval: 300, tcping-url: 1.1.1.1:53, icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Auto_Speed.png"}
-#  - {name: 🚪 入口选择, type: select , include-all-providers: true , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/El.png"} 
+#  - {name: 🔀 自动选择, type: url-test , include-all-providers: true , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Auto_Speed.png"} 
+  - {name: 🔀 自动选择, type: url-test , include-all-providers: true , url: http://www.apple.com/library/test/success.html, interval: 300, tcping-url: 1.1.1.1:53, icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Auto_Speed.png"}
+#  - {name: 🚪 入口选择, type: select , include-all-providers: true , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/El.png"} 
 
 #  - {name: 🌀 链式代理, type: select , proxies: [🚪 入口选择], dialer-proxy: 🚀 手动选择 }     #入口自动选择： 🔄 负载均衡  🚀 手动选择  弃用 relay 启用dialer-proxy
 #  - {name: 🌀 链式代理, type: select, proxies: [🚀 手动选择], dialer-proxy: 🔄 负载均衡}
@@ -245,15 +245,15 @@ proxy-groups:
 #地区  （自动选择）
  # - {name: 🆓 公益节点, type: url-test , include-all-providers: true, filter: "(?i)公益|free"}
  # - {name: ♾️ 全部节点, type: url-test , include-all-providers: true} 
- # - {name: 💯 精品节点, type: url-test , include-all-providers: true, filter: "(?i)优|精|反|品|自|家|免流|iplc|iepl|pro|gpt" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/China.png"}
- # - {name: 🟥 港澳节点, type: url-test , include-all-providers: true, filter: "(?i)香|hk|hongkong|hong kong|澳门|macao|mo" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Hong_Kong.png"}
- # - {name: 🟥 台湾节点, type: url-test , include-all-providers: true, filter: "(?i)台|tw|taiwan|臺灣" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Taiwan.png"}
- # - {name: 🦁 新家节点, type: url-test , include-all-providers: true, filter: "(?i)(新|sg|singapore|狮)" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Singapore.png"}
- # - {name: 🗾 日本节点, type: url-test , include-all-providers: true, filter: "(?i)日|jp|japan|东京" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Japan.png"}
- # - {name: 🥒 韩国节点, type: url-test , include-all-providers: true, filter: "(?i)韩|kr|ko|korea|south korea|republic of korea|首|韓國" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Korea.png"}
+ # - {name: 💯 精品节点, type: url-test , include-all-providers: true, filter: "(?i)优|精|反|品|自|家|免流|iplc|iepl|pro|gpt" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/China.png"}
+ # - {name: 🟥 港澳节点, type: url-test , include-all-providers: true, filter: "(?i)香|hk|hongkong|hong kong|澳门|macao|mo" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Hong_Kong.png"}
+ # - {name: 🟥 台湾节点, type: url-test , include-all-providers: true, filter: "(?i)台|tw|taiwan|臺灣" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Taiwan.png"}
+ # - {name: 🦁 新家节点, type: url-test , include-all-providers: true, filter: "(?i)(新|sg|singapore|狮)" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Singapore.png"}
+ # - {name: 🗾 日本节点, type: url-test , include-all-providers: true, filter: "(?i)日|jp|japan|东京" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Japan.png"}
+ # - {name: 🥒 韩国节点, type: url-test , include-all-providers: true, filter: "(?i)韩|kr|ko|korea|south korea|republic of korea|首|韓國" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Korea.png"}
 #  - {name: 🗽 美国节点, type: url-test , include-all-providers: true, filter: "(?i)美|us|unitedstates|united states"}
 #  - {name: 🌏 亚洲地区, type: url-test , include-all-providers: true, filter: "(?i)香|hk|hongkong|hong kong|澳门|macao|mo|台|tw|taiwan|臺灣|(新|sg|singapore|狮)|日|东京|jp|japan|韩|首|韓國|kr|korea|south korea|republic of korea|印|in|越|vn|泰|th"}
- # - {name: 🗽 美国节点, type: url-test , include-all-providers: true, filter: "(?i)美|us|unitedstates|united states|纽约|洛杉矶|利伯蒂湖|圣何塞|西雅图" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/United_States.png"}
+ # - {name: 🗽 美国节点, type: url-test , include-all-providers: true, filter: "(?i)美|us|unitedstates|united states|纽约|洛杉矶|利伯蒂湖|圣何塞|西雅图" , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/United_States.png"}
 
 #  - {name: ❓ 其它地区, type: url-test , include-all-providers: true, filter: "(?i)荷|nl|nederland|德|de|卢森堡|luxembourg|lu|澳大利亚|au|巴基斯坦|pk|哈萨克斯坦|kaz|加拿大|ca|奥地利|at|比利时|be|捷克|cz|英|gb|法|fr|意|it|罗马尼亚|ro"}
 # 负载均衡
@@ -263,25 +263,25 @@ proxy-groups:
 # 分流策略
 
 #  - {name: dns, type: select, proxies: [♻️ 代理模式, 🚀 手动选择]}
-  - {name: 🆎 广告拦截, type: select, proxies: [❌ 阻断连接, 🚀 手动选择,  ➡️ 直连模式] , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Reject.png"}
-  - {name: 🟥 中国连接, <<: *dr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/China.png"}
-  - {name: Ⓜ️ 远程仓库, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/github.png"}  
-  - {name: Ⓜ️ 微软云盘, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/OneDrive.png"}
-  - {name: Ⓜ️ 微软服务, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Microsoft.png"}     
+  - {name: 🆎 广告拦截, type: select, proxies: [❌ 阻断连接, 🚀 手动选择,  ➡️ 直连模式] , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Reject.png"}
+  - {name: 🟥 中国连接, <<: *dr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/China.png"}
+  - {name: Ⓜ️ 远程仓库, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/github.png"}  
+  - {name: Ⓜ️ 微软云盘, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/OneDrive.png"}
+  - {name: Ⓜ️ 微软服务, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Microsoft.png"}     
   - {name: 🎮 游戏平台, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/ico/steam.ico"}
-#  - {name: 🎮 暴雪平台, <<: *ar , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Battle.png"}  
-  - {name: 🤖 人工智能, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/OpenAI.png"}  
+#  - {name: 🎮 暴雪平台, <<: *ar , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Battle.png"}  
+  - {name: 🤖 人工智能, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/OpenAI.png"}  
   - {name: 🔍 谷歌服务, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/ico/google.ico"}  
   - {name: 🔍 谷歌商店, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/ico/googleplay.ico"}
-  - {name: 🎬 油管视频, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/YouTube.png"}  
-  - {name: 🎶 声田音乐, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Spotify.png"} 
-  - {name: 💬 电报社交, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Telegram.png"}
-  - {name: 💬 推特社交, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/x.png"}  
-  - {name: 🎞️ 奈飞影视, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/netflix.png"}   
+  - {name: 🎬 油管视频, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/YouTube.png"}  
+  - {name: 🎶 声田音乐, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Spotify.png"} 
+  - {name: 💬 电报社交, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Telegram.png"}
+  - {name: 💬 推特社交, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/x.png"}  
+  - {name: 🎞️ 奈飞影视, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/netflix.png"}   
   - {name: 🎵 抖音国际, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/ico/tiktok.ico"}   
-  - {name: 🐼 绅士漫画, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Eh.png"}   
-  - {name: 🍎 苹果服务, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Apple.png"}      
-  - {name: 🪜 其它连接, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/png/Vpn.png"}
+  - {name: 🐼 绅士漫画, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Eh.png"}   
+  - {name: 🍎 苹果服务, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Apple.png"}      
+  - {name: 🪜 其它连接, <<: *pr , icon: "https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/images/png/Vpn.png"}
 
 #  - {name: ➡️ 直连模式, type: select, proxies: [DIRECT]}
 #  - {name: ❌ 断开连接, type: select, proxies: [REJECT]}
