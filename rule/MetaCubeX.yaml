@@ -1,5 +1,5 @@
 ### 自用虚空终端规则 ###
-### https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/main/MetaCubeX.yaml
+### https://gh.cnli.top/https://raw.githubusercontent.com/cn-wanmei/ClashTools/refs/heads/main/rule/MetaCubeX.yaml
 ######### 锚点 start #######
 # 策略组相关
 #pr: &pr {type: select, proxies: [♻️ 代理模式,🚀 手动选择,✅ 故障转移,🔀 自动选择,➡️ 直连模式,🔂 一致散列,🔁 循环均衡,💯 精品节点]}
